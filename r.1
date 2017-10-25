@@ -1,0 +1,21 @@
+require(tidyverse)
+
+install.packages("dplyr")
+library(dplyr)
+help(package = dplyr)
+
+read.csv('shrub-volume-experiment.csv')
+
+names(shrub_column)
+
+str(shrub_column)
+
+head(shrub_column)
+
+print(select(shrub_column,length))
+
+print(select(shrub_column,site, experiment))
+
+print(select(shrub_column, height>5)
+      
+print(shrub_data_w_vols <- mutate(shrub_column, "volume" = length*width*height))
